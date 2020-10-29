@@ -1,0 +1,6 @@
+{
+    "require": {
+        "phpstan/phpstan": "~0.12",
+        "phpstan/phpstan-doctrine": "~0.12"
+    }
+}
