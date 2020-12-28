@@ -11,13 +11,14 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - name: Cache Docker layers
+      - name: Cache Docker
         uses: actions/cache@v2.1.2
         with:
           path: /tmp/.buildx-cache
           key: ${{ runner.os }}-buildx-${{ github.sha }}
           restore-keys: |
             ${{ runner.os }}-buildx-
+            ${{ runner.os }}-
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1.0.1
