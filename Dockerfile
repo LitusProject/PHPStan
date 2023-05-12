@@ -14,7 +14,7 @@ RUN composer global install \
   --optimize-autoloader \
   --prefer-dist
 
-FROM php:8.2.5-cli-alpine
+FROM php:8.2.6-cli-alpine
 
 COPY --from=composer /composer/ /composer/
 
