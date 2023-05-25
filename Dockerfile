@@ -1,4 +1,4 @@
-FROM composer:2.5.5 AS composer
+FROM composer:2.5.7 AS composer
 
 COPY composer.* /composer/
 
